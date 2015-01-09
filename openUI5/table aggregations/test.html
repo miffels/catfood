@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body class="sapUiBody" id="content" role="application">
+        <div id="mySimpleTemplate" data-type="text/x-handlebars-template">
+            {{#control
+                id="event-table"
+                sap-ui-type="sap.m.Table"
+                inset="false"
+                items="{/items}"}}
+                {{#aggregation name="columns"}}
+                    {{#control
+                    sap-ui-type="sap.m.Column"}}
+                        {{control sap-ui-type="sap.m.Text" text="Column"}}
+                    {{/control}}
+                {{/aggregation}}
+                {{#control sap-ui-type="sap.m.ColumnListItem"}}
+                    {{text path="/name"}}
+                {{/control}}
+            {{/control}}
+        </div>
+    <script id="sap-ui-bootstrap"
+            src="lib/openui5/resources/sap-ui-core.js"
+            data-sap-ui-xx-bindingSyntax="complex"
+            data-sap-ui-theme="sap_bluecrystal"
+            data-sap-ui-libs="sap.m">
+    </script>
+    <script type="text/javascript">
+        sap.ui.getCore().setModel({
+            items: []
+        });
+
+        sap.ui.template();
+    </script>
+    </body>
+</html>
