@@ -21,7 +21,4 @@ class Language {
 		label blank: false
     }
 	
-	static mapping = {
-		id natural: ['key']
-	}
 }
