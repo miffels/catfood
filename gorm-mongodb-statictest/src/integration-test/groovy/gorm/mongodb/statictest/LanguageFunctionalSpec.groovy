@@ -16,7 +16,7 @@ class LanguageFunctionalSpec extends Specification {
     void "Test initialization"() {
         expect: "Default languages should be there"
 		Language.findByKey "en"  // PASS
-		Language.count() || Language.findAll().size() // FAIL
+		Language.count() || Language.findAll() // FAIL
     }
 	
 }
