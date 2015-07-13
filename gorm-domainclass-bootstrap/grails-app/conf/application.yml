@@ -2,7 +2,7 @@
 grails:
     profile: web
     codegen:
-        defaultPackage: gorm.mongodb.statictest
+        defaultPackage: gorm.domainclass.bootstrap
 info:
     app:
         name: '@info.app.name@'
@@ -81,13 +81,9 @@ environments:
             dbCreate: create-drop
             url: jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
     test:
-        grails:
-            mongodb:
-                host: "localhost"
-                port: 27018
-                databaseName: "card-services-test"
         dataSource:
             dbCreate: update
+            url: jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
     production:
         dataSource:
             dbCreate: update
