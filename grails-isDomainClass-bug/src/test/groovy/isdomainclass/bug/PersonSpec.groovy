@@ -2,6 +2,7 @@ package isdomainclass.bug
 
 import grails.test.mixin.TestFor
 import org.grails.core.DefaultGrailsDomainClass
+import org.grails.core.artefact.DomainClassArtefactHandler
 import spock.lang.Specification
 
 /**
@@ -18,6 +19,7 @@ class PersonSpec extends Specification {
 
     void "Test composite key"() {
         expect:"Key to be ['firstName', 'lastName']"
+        DomainClassArtefactHandler.isDomainClass(Person)
         new DefaultGrailsDomainClass(Person).properties.find {
             it.identity
         }.name == ["firstName", "lastName"]
