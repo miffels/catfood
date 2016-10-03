@@ -1,7 +1,8 @@
 Thumbs.db
 .DS_Store
 .gradle
-build/
+build/*
+!build/reports/
 classes/
 .idea
 *.iml
