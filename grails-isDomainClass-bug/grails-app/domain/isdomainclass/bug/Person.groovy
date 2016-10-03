@@ -2,7 +2,7 @@ package isdomainclass.bug
 
 import org.apache.commons.lang.builder.HashCodeBuilder
 
-// Example from http://gorm.grails.org/6.0.x/hibernate/manual/#compositePrimaryKeys
+// Example from http://docs.grails.org/3.1.11/guide/single.html#compositePrimaryKeys
 class Person implements Serializable {
 
     String firstName
