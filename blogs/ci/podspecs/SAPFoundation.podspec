@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.license      = { :type => "SAP-DEV", :file => "LICENSE" }
+  s.license      = "SAP-DEV"
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
