@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.license      = "SAP-DEV"
+  s.license      = { :type => "SAP-DEV", :file => "https://tools.hana.ondemand.com/developer-license-3.0.0.txt" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
