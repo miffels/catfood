@@ -1,13 +1,12 @@
 package navigationtest
 
-import grails.test.mixin.TestFor
+import grails.testing.gorm.DomainUnitTest
 import spock.lang.Specification
 
 /**
  * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
  */
-@TestFor(FromDomain)
-class FromDomainSpec extends Specification {
+class FromDomainSpec extends Specification implements DomainUnitTest<FromDomain> {
 
     def setup() {
         mockDomains(FromDomain, ToDomain, ToDomainSubclass)
