@@ -1,0 +1,11 @@
+{
+  "name": "1dx-global-checker",
+  "version": "1.0.0",
+  "description": "Sample for https://github.com/SAPDocuments/Tutorials/issues/6758",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Jess",
+  "license": "ISC"
+}
